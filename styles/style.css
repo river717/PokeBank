@@ -1,0 +1,38 @@
+body {
+    background: linear-gradient(90deg, #cdffd8, #94b9ff);
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.btnStyle{
+    background-color: #2f5f98;
+    color: white;
+    font-size: 4rem;
+    padding: 10px 60px;
+    border-radius: 100px;
+}
+
+.btnStyle:hover{
+    background-color: #215198;
+    transition: 0.2s;
+}
+
+.pinText{
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.inputDigit{
+    text-align: center;
+    width: 160px;
+    height: 160px;
+    font-size: 6rem;
+    background-color: #2f5f98;
+    color: white;
+    border-radius: 100px;
+}
+
+.btnStyle:active{
+    /* 
+    Propiedad border outline */
+}
+
