@@ -12,8 +12,49 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
-    <div class="container-fluid d-flex flex-column justify-content-center align-items-center gap-4">
-    <img src="/img/logo.png" > <!--Se cambia width desde css-->
-    <a href="/index.html"><button class="btnStyle salirButton">Salir</button></a> 
+    <div class="container-fluid d-flex flex-column justify-content-start align-items-center gap-4">
+        <img src="/img/logo.png" style="position: absolute; top: 0; left: 0;">
+        <h1 style="text-align: center;">Historial de transacciones</h1>
+        <a href="/index.html"><button class="btnStyle salirButton">Salir</button></a> 
+
+        <div class="transaction-history">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Monto</th>
+                        <th>Tipo</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>$100</td>
+                        <td>Depósito</td>
+                        <td>2024-01-03</td>
+                    </tr>
+                    <tr>
+                        <td>$50</td>
+                        <td>Retiro</td>
+                        <td>2024-01-02</td>
+                    </tr>
+                    <tr>
+                        <td>$200</td>
+                        <td>Depósito</td>
+                        <td>2024-01-01</td>
+                    </tr>
+                    <tr>
+                        <td>$150</td>
+                        <td>Retiro</td>
+                        <td>2023-01-04</td>
+                    </tr>
+                    <tr>
+                        <td>$300</td>
+                        <td>Depósito</td>
+                        <td>2023-01-05</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
 </body>
 </html>
