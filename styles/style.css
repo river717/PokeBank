@@ -1,4 +1,11 @@
+body, html {
+    height: 100%; /* Toma todo el doc y le aplica despues el centrado */
+}
+
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(90deg, #cdffd8, #94b9ff);
     font-family: 'Oswald', sans-serif !important;
 }
@@ -17,8 +24,23 @@ body {
 }
 
 .pinText{
-    font-size: 5rem;
+    font-size: 20px;
     font-weight: 500;
+}
+
+.pinInput input {
+    width: 50px; /* Ajustes */
+    height: 30px; /* Ajustes */
+    font-size: 16px; /* Ajustes */
+}
+
+.btnStyle {
+    font-size: 16px; /* Ajustes */
+    padding: 5px 10px; /* Ajustes */
+}
+
+img {
+    width: 220px; /* Ajustes */
 }
 
 .inputDigit{
