@@ -73,3 +73,23 @@ th, td {
     padding: 8px;
     text-align: left;
 }
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px; /* Set image width to 50px */
+    height: 50px; /* Set image height to 50px */
+    margin-top: 10px; /* Add top margin for spacing */
+    margin-left: 10px; /* Add left margin for spacing */   
+}
+
+.btnNom {
+    position: absolute;
+    left: 0;
+    top: 60;
+}
+
+.btnNom {
+    margin-top: 5px; /* Add top margin for spacing between the logo and the name */
+}
