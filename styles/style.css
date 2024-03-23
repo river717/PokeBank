@@ -93,3 +93,19 @@ th, td {
 .btnNom {
     margin-top: 5px; /* Add top margin for spacing between the logo and the name */
 }
+
+
+canvas {
+    width: 1600px;
+}
+
+.chart-container{
+    width: 1000px;
+    height: 1000px;
+}
+
+.btn-group {
+    margin-bottom: 20px;
+    width: 500px;
+    height: 100px;
+}
