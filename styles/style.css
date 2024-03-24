@@ -32,7 +32,23 @@ body {
     width: 235px;
 }
 
+.btnStyle1{
+    background-color: #2f5f98;
+    color: white;
+    font-size: 20px;
+    padding: 8px 18px;
+    border-radius: 100px 0 0 100px;
+    border: none;
+    cursor: pointer;
+    width: 235px;
+}
+
 .btnStyle:hover{
+    background-color: #215198;
+    transition: 0.2s;
+}
+
+.btnStyle1:hover{
     background-color: #215198;
     transition: 0.2s;
 }
@@ -58,6 +74,15 @@ img {
     background-color: #2f5f98;
     color: white;
     border-radius: 100px;
+}
+
+.inputText{
+    border-radius: 100px;
+    border: none;
+    width: 350px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
 }
 
 table {
@@ -120,11 +145,12 @@ canvas {
     z-index: 1000;
     background-color: #2f5f98;
     color: white;
-    padding: 8px 60px;
+    padding: 8px 0px;
     border-radius: 100px;
     border: none;
     cursor: pointer;
     font-size: 20px;
+    width: 235px;
 }
 
 .btnSalir:hover{
@@ -172,6 +198,7 @@ canvas {
 
     .btnSalir{
         padding: 5px 25px;
+        width: 200px;
     }
 
     img{
@@ -200,6 +227,12 @@ canvas {
         width: 200px;
     }
 
+    .btnStyle1{
+        font-size: 16px;
+        padding: 8px 18px;
+        width: 200px;
+    }
+
     .btnSalir {
         padding: 8px 25px;
         font-size: 16px;
@@ -211,6 +244,12 @@ canvas {
 
     h2{
         font-size: 25px !important;
+    }
+
+    .inputText{
+        width: 250px;
+        height: 40px;
+        font-size: 20px;
     }
 }
 
