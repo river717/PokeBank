@@ -74,26 +74,38 @@ th, td {
     text-align: left;
 }
 
-.logo{
+.custInfo{
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.custInfo .btnStyle {
+    margin-top: 2.5px; /* Espacio entre los elementos */
+}
+
+.logo{
+
     width: 50px; /* Set image width to 50px */
     height: 50px; /* Set image height to 50px */
     margin-top: 10px; /* Add top margin for spacing */
     margin-left: 10px; /* Add left margin for spacing */   
 }
 
-.btnNom {
-    position: absolute;
-    left: 0;
-    top: 60;
+.menuCajero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 500px;
 }
 
-.btnNom {
-    margin-top: 5px; /* Add top margin for spacing between the logo and the name */
+.menuCajero .btnStyle {
+    width: calc(50% - 10px); /* Ancho de cada botón (50% del contenedor menos el espacio entre ellos) */
+    margin-bottom: 10px; /* Espacio entre los botones */
 }
-
 
 canvas {
     width: 1600px;
