@@ -13,13 +13,13 @@
 </head>
 <body>
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center gap-4">
-        <img src="img/logo.png" > <!--Se cambia width desde css-->
+        <img src="img/logo.png"> 
         <p class="pinText">Ingrese su pin:</p>
-        <div class="pinInput d-flex gap-3">
-            <input type="number" class="inputDigit">
-            <input type="number" class="inputDigit">
-            <input type="number" class="inputDigit">
-            <input type="number" class="inputDigit">
+        <div class="pinInput d-flex gap-2">
+            <input type="number" min="0" max="9" class="inputDigit">
+            <input type="number" min="0" max="9" class="inputDigit">
+            <input type="number" min="0" max="9" class="inputDigit">
+            <input type="number" min="0" max="9" class="inputDigit">
         </div>
         <a href="/vistas/principal.html">
         <button onclick="login()" class="btnStyle">Iniciar Sesión</button></a>

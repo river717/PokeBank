@@ -1,3 +1,14 @@
+/* Se eliminan los botones de aumentar y disminuir en los input*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
 body, html {
     height: 100%; /* Toma todo el doc y le aplica despues el centrado */
 }
@@ -13,9 +24,12 @@ body {
 .btnStyle{
     background-color: #2f5f98;
     color: white;
-    font-size: 4rem;
-    padding: 10px 60px;
+    font-size: 20px;
+    padding: 8px 18px;
     border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    width: 235px;
 }
 
 .btnStyle:hover{
@@ -23,55 +37,38 @@ body {
     transition: 0.2s;
 }
 
-.pinText{
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.pinInput input {
-    width: 50px; /* Ajustes */
-    height: 30px; /* Ajustes */
-    font-size: 16px; /* Ajustes */
-}
-
-.btnStyle {
-    font-size: 16px; /* Ajustes */
-    padding: 5px 10px; /* Ajustes */
-}
-
-.salirButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 16px; /* Adjust button font size */
-    padding: 5px 10px; /* Adjust button padding */
-}
-
 img {
-    width: 220px; /* Ajustes */
+    width: 300px;
+}
+
+.img-top{
+    width: 225px;
+}
+
+.pinText{
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .inputDigit{
     text-align: center;
-    width: 160px;
-    height: 160px;
-    font-size: 6rem;
+    width: 60px;
+    height: 45px;
+    font-size: 25px;
     background-color: #2f5f98;
     color: white;
     border-radius: 100px;
 }
 
-.btnStyle:active{
-    /* 
-    Propiedad border outline */
-}
 table {
     width: 100%;
     border-collapse: collapse;
 }
+
 th, td {
-    padding: 8px;
+    padding: 8px 16px;
     text-align: left;
+    font-size: 20px;
 }
 
 .custInfo{
@@ -84,15 +81,14 @@ th, td {
 }
 
 .custInfo .btnStyle {
-    margin-top: 2.5px; /* Espacio entre los elementos */
+    margin-top: 2.5px;
 }
 
 .logo{
-
-    width: 50px; /* Set image width to 50px */
-    height: 50px; /* Set image height to 50px */
-    margin-top: 10px; /* Add top margin for spacing */
-    margin-left: 10px; /* Add left margin for spacing */   
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .menuCajero{
@@ -117,19 +113,6 @@ canvas {
     height: auto; 
 }
 
-.chart-container {
-    max-width: 100%; 
-    height: auto; 
-    padding: 10px; 
-}
-
-.btn-group {
-    margin-bottom: 20px;
-    width: 500px;
-    height: 100px;
-}
-
-
 .btnSalir {
     position: absolute;
     top: 20px;
@@ -137,23 +120,16 @@ canvas {
     z-index: 1000;
     background-color: #2f5f98;
     color: white;
-    padding: 10px 60px;
+    padding: 8px 60px;
     border-radius: 100px;
     border: none;
     cursor: pointer;
-    margin-right: 10px;
-    
-
+    font-size: 20px;
 }
 
 .btnSalir:hover{
-    background-color: #4b88e4;
+    background-color: #215198;
     transition: 0.2s;
-}
-
-
-.container-fluid {
-    position: relative;
 }
 
 .logo-btn-container {
@@ -164,22 +140,10 @@ canvas {
     align-items: center;
     z-index: 2; 
     padding: 10px;
-    
 }
 
-.btnStyle {
-    /* Estilos del botón Salir */
-    
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    margin-right: 10px;
-
-   
-}
-
-#chart-container {
-   position: relative; 
+.chart-container {
+    position: relative; 
     max-width: 80%; 
     max-height: 80%;
     display: flex;
@@ -198,4 +162,59 @@ canvas {
     bottom: 0;
     left: 0;
     z-index: 1000; 
+}
+
+/* Pantalla de Celulares */
+@media only screen and (max-width: 767px) {
+    body{
+        overflow: hidden;
+    }
+
+    .btnSalir{
+        padding: 5px 25px;
+    }
+
+    img{
+        width: 200px;
+    }
+
+    .img-top{
+        width: 150px;
+    }
+
+    .pinText{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .inputDigit{
+        text-align: center;
+        width: 50px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .btnStyle{
+        font-size: 16px;
+        padding: 8px 18px;
+        width: 200px;
+    }
+
+    .btnSalir {
+        padding: 8px 25px;
+        font-size: 16px;
+    }
+
+    th, td {
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 25px !important;
+    }
+}
+
+/* Pantalla de Tablets y laptops pequeñas */
+@media (min-width: 768px) and (max-width: 1023px){
+
 }
