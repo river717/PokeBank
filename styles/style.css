@@ -104,7 +104,12 @@ th, td {
 
 .menuCajero .btnStyle {
     width: calc(50% - 10px); /* Ancho de cada botón (50% del contenedor menos el espacio entre ellos) */
-    margin-bottom: 10px; /* Espacio entre los botones */
+    margin-bottom: 10px; 
+}
+
+.menuCajero .btnStyle a {
+    text-decoration: none; 
+    color: white; 
 }
 
 canvas {
