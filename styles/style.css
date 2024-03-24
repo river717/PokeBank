@@ -96,6 +96,10 @@ th, td {
     font-size: 20px;
 }
 
+.consulta-saldo td{
+    text-align: center;
+}
+
 .custInfo{
     position: absolute;
     top: 0;
