@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transacciones</title>
+    <title>Pokemon Bank</title>
     <link rel="icon" href="../img/Pokeball.png" type="image/png">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap">
@@ -12,21 +12,32 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
-    <div class="custInfo">
-        <img src="/img/user-interface.png" alt="logo" class="logo">
-        <button class="btnStyle btnNom" > Nombre: Ash Ketchum</button>
-        <button class="btnStyle btnCuent">Cuenta: 65535</button>
-    </div>
     <div class="container-fluid d-flex flex-column justify-content-start align-items-center gap-4">
-        <img src="/img/logo.png" >
-        <h2>Por favor seleccione su transacción</h2>
+        <img src="/img/logo.png" class="img-top" style="position: absolute; top: 10px; left: 10px;">
+        <h2>Consulta de saldo</h2>
         <a href="principal.html"><button class="btnSalir">Volver</button></a> 
-
-        <div class="menuCajero">
-            <button class="btnStyle">Retirar</button>
-            <button class="btnStyle">Depositar</button>
-            <button class="btnStyle "> <a href="/vistas/saldo.html"> Consultar Saldo</a></button>
-            <button class="btnStyle"><a href="/vistas/servicios.html">Pagar Servicios</a></button>     
+        <div class="transaction-history">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Total</th>
+                        <th>Disponible</th>
+                        <th>Flotante</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>$600</td>
+                        <td>$450</td>
+                        <td>$150</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="menuCajero">
+                <button class="btnStyle">Retirar</button>
+                <button class="btnStyle">Depositar</button>
+   
+            </div>
         </div>
     </div>
 </body>
